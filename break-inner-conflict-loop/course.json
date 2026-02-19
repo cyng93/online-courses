@@ -1,0 +1,403 @@
+{
+  "course_id": "break-inner-conflict-loop",
+  "course_title": "停止內耗｜阿德勒Ｘ完形心理學，帶你走出反覆卡關的人生",
+  "author": "周慕姿心理師",
+  "subtitle_lang": "zh-TW",
+  "audio_lang": "zh",
+  "playlist_id": "PLKInOIgV1wdJSa1C-eKlnSGiVQzaK72ko",
+  "crop": {
+    "height": 120,
+    "scale_width": 2560,
+    "scale_height": 240
+  },
+  "chapters": {
+    "0": "前言",
+    "1": "什麼是內耗？",
+    "2": "認識你的假我",
+    "3": "內耗的來源與轉化",
+    "4": "六大內耗主題",
+    "5": "關係中的內耗",
+    "6": "長回自己"
+  },
+  "videos": [
+    {
+      "id": "0-1",
+      "title": "停止內耗是一段自我探索與轉化的旅程",
+      "filename": "0-1.停止內耗是一段自我探索與轉化的旅程.mp4",
+      "youtube_id": "nDZo9zCZZyg"
+    },
+    {
+      "id": "1-1",
+      "title": "你怎麼活得這麼累，是什麼卡住你的人生：內耗是什麼？",
+      "filename": "1-1.你怎麼活得這麼累，是什麼卡住你的人生：內耗是什麼_.mp4",
+      "youtube_id": "X4SjokXffRw"
+    },
+    {
+      "id": "1-2",
+      "title": "阿德勒心理學：內耗是自卑感的補償機制與虛構目標",
+      "filename": "1-2.阿德勒心理學：內耗是自卑感的補償機制與虛構目標.mp4",
+      "youtube_id": "MPyR_IOx5NM"
+    },
+    {
+      "id": "1-3",
+      "title": "完形心理學：你的未竟事宜有哪些？",
+      "filename": "1-3.完形心理學：你的未竟事宜有哪些？.mp4",
+      "youtube_id": "ACZtNCuOzlU"
+    },
+    {
+      "id": "1-4",
+      "title": "從人生三大發展任務理解內耗",
+      "filename": "1-4.從人生三大發展任務理解內耗.mp4",
+      "youtube_id": "RS3O7DTpsOE"
+    },
+    {
+      "id": "1-5",
+      "title": "從阿德勒與完形心理學理解內耗現象",
+      "filename": "1-5.從阿德勒與完形心理學理解內耗現象.mp4",
+      "youtube_id": "q6w7aKObIIw"
+    },
+    {
+      "id": "1-6",
+      "title": "內耗的幾種表現方式",
+      "filename": "1-6 內耗的幾種表現方式.mp4",
+      "youtube_id": "YRVyJ29OU48"
+    },
+    {
+      "id": "1-7",
+      "title": "為何會發展出假我與生存策略",
+      "filename": "1-7 為何會發展出假我與生存策略.mp4",
+      "youtube_id": "yEdgGeepnV4"
+    },
+    {
+      "id": "2-1",
+      "title": "假我人生：你活的是你，還是你以為的你？（瑪麗蓮．夢露）",
+      "filename": "2-1.假我人生：你活的是你，還是你以為的你？（瑪麗蓮．夢露）.mp4",
+      "youtube_id": "TQeEM5Z9e_0"
+    },
+    {
+      "id": "2-2",
+      "title": "阿德勒虛構目標 V.S. 完形心理學內攝，你過著誰要的人生？",
+      "filename": "2-2.阿德勒虛構目標 V.S. 完形心理學內攝，你過著誰要的人生？.mp4",
+      "youtube_id": "_orxXyHY03g"
+    },
+    {
+      "id": "2-3",
+      "title": "四型內耗人格的五大心理面向分析",
+      "filename": "2-3.四型內耗人格的五大心理面向分析.mp4",
+      "youtube_id": "7NPIPputZA4"
+    },
+    {
+      "id": "2-4",
+      "title": "四型人格量表檢測說明與完整題目",
+      "filename": "2-4.四型人格量表檢測說明與完整題目.mp4",
+      "youtube_id": "91B5hTUhP-c"
+    },
+    {
+      "id": "2-5",
+      "title": "內耗行為與情緒語言的辨識",
+      "filename": "2-5.內耗行為與情緒語言的辨識.mp4",
+      "youtube_id": "zSKHROKXesI"
+    },
+    {
+      "id": "2-6",
+      "title": "練習：辨識我的內攝與自卑補償行為",
+      "filename": "2-6.練習：辨識我的內攝與自卑補償行為.mp4",
+      "youtube_id": "T3b-6Gpp6z0"
+    },
+    {
+      "id": "2-7",
+      "title": "假我投射練習：動物隱喻測驗",
+      "filename": "2-7.假我投射練習：動物隱喻測驗.mp4",
+      "youtube_id": "tjS3r1-nmxs"
+    },
+    {
+      "id": "2-8",
+      "title": "三面鏡練習",
+      "filename": "2-8.三面鏡練習.mp4",
+      "youtube_id": "Z-rybPPyx6U"
+    },
+    {
+      "id": "3-1",
+      "title": "創傷型、環境型、自我期待型的內耗來源",
+      "filename": "3-1.創傷型、環境型、自我期待型的內耗來源.mp4",
+      "youtube_id": "F5BuidrmBXQ"
+    },
+    {
+      "id": "3-2-1",
+      "title": "為什麼我們總是內耗？三型內耗來源檢測工具",
+      "filename": "3-2-1.為什麼我們總是內耗？三型內耗來源檢測工具.mp4",
+      "youtube_id": "fZfki_NaMO4"
+    },
+    {
+      "id": "3-2-2",
+      "title": "三種內耗的信念辨識與未竟事宜",
+      "filename": "3-2-2.三種內耗的信念辨識與未竟事宜.mp4",
+      "youtube_id": "JDNTugqk_zE"
+    },
+    {
+      "id": "3-3-1",
+      "title": "反芻思考：為何我們會一直想「那個決定是對的嗎？」",
+      "filename": "3-3-1.反芻思考：為何我們會一直想「那個決定是對的嗎？」.mp4",
+      "youtube_id": "6lRJe7U1iQ4"
+    },
+    {
+      "id": "3-3-2",
+      "title": "練習：停止反芻思考的信念覺察",
+      "filename": "3-3-2.練習：停止反芻思考的信念覺察.mp4",
+      "youtube_id": "Usyb9wYJNF0"
+    },
+    {
+      "id": "3-4-1",
+      "title": "我的內耗觸發點是什麼？──找出你的羞愧感彈珠球",
+      "filename": "3-4-1.我的內耗觸發點是什麼？──找出你的羞愧感彈珠球.mp4",
+      "youtube_id": "zTko6qagxa8"
+    },
+    {
+      "id": "3-4-2",
+      "title": "找出你的彈珠球清單",
+      "filename": "3-4-2.找出你的彈珠球清單.mp4",
+      "youtube_id": "tkWSw-FoG6s"
+    },
+    {
+      "id": "3-5-1",
+      "title": "羞愧感四種防衛（上）預設否定與扭曲詮釋",
+      "filename": "3-5-1.羞愧感四種防衛（上）預設否定與扭曲詮釋.mp4",
+      "youtube_id": "oCcpfdleB70"
+    },
+    {
+      "id": "3-5-2",
+      "title": "羞愧感四種防衛（下）理性切割與情緒懲罰",
+      "filename": "3-5-2.羞愧感四種防衛（下）理性切割與情緒懲罰.mp4",
+      "youtube_id": "x6-I6SD042Y"
+    },
+    {
+      "id": "3-5-3",
+      "title": "練習：轉化羞愧感的三步驟",
+      "filename": "3-5-3.練習：轉化羞愧感的三步驟.mp4",
+      "youtube_id": "H-DooYFdNTk"
+    },
+    {
+      "id": "3-6-1",
+      "title": "內耗迴圈與練習",
+      "filename": "3-6-1.內耗迴圈與練習.mp4",
+      "youtube_id": "TOpHsm1japE"
+    },
+    {
+      "id": "3-6-2",
+      "title": "打斷內耗迴圈：六步繪圖學習單",
+      "filename": "3-6-2.打斷內耗迴圈：六步繪圖學習單.mp4",
+      "youtube_id": "8jti90I7c70"
+    },
+    {
+      "id": "3-6-3",
+      "title": "打斷內耗迴圈：4週微行動計劃",
+      "filename": "3-6-3.打斷內耗迴圈：4週微行動計劃.mp4",
+      "youtube_id": "rT4QQvzkUeQ"
+    },
+    {
+      "id": "3-7",
+      "title": "內耗骨牌結構圖解",
+      "filename": "3-7.內耗骨牌結構圖解.mp4",
+      "youtube_id": "_LMlwqZE4ik"
+    },
+    {
+      "id": "3-8",
+      "title": "練習：寫信給未來的自己",
+      "filename": "3-8.練習：寫信給未來的自己.mp4",
+      "youtube_id": "k-Y3WDTr9fc"
+    },
+    {
+      "id": "3-9",
+      "title": "練習：空椅練習與「唱衰魔人」對話",
+      "filename": "3-9 練習：空椅練習與「唱衰魔人」對話.mp4",
+      "youtube_id": "d8bnV45OdyQ"
+    },
+    {
+      "id": "3-10",
+      "title": "練習：和內在小孩對話",
+      "filename": "3-10.練習：和內在小孩對話.mp4",
+      "youtube_id": "pegut_8u0oM"
+    },
+    {
+      "id": "4-1-1",
+      "title": "【拖延怠惰】我怕做不好、不夠好，所以什麼都不敢開始",
+      "filename": "4-1-1.【拖延怠惰】我怕做不好、不夠好，所以什麼都不敢開始.mp4",
+      "youtube_id": "Tn9eiI4zTQg"
+    },
+    {
+      "id": "4-1-2",
+      "title": "【拖延怠惰】大腦的拖延密碼：前額葉與瑣碎任務的關係",
+      "filename": "4-1-2.【拖延怠惰】大腦的拖延密碼：前額葉與瑣碎任務的關係.mp4",
+      "youtube_id": "_Ur62F_dBwE"
+    },
+    {
+      "id": "4-2-1",
+      "title": "【配得感過低】別人都覺得我可以，但我不確定...",
+      "filename": "4-2-1.【配得感過低】別人都覺得我可以，但我不確定....mp4",
+      "youtube_id": "AYFrmlshj1M"
+    },
+    {
+      "id": "4-2-2",
+      "title": "【配得感過低】冒牌者現象轉化行動",
+      "filename": "4-2-2.【配得感過低】冒牌者現象轉化行動.mp4",
+      "youtube_id": "56iuAqEpTl0"
+    },
+    {
+      "id": "4-3-1",
+      "title": "【情緒壓抑】我怕衝突，所以什麼都忍，但回家自己又會爆炸",
+      "filename": "4-3-1.【情緒壓抑】我怕衝突，所以什麼都忍，但回家自己又會爆炸.mp4",
+      "youtube_id": "hgwfvFS2t6s"
+    },
+    {
+      "id": "4-3-2",
+      "title": "【情緒壓抑】我怕衝突，所以什麼都忍，但回家自己又會爆炸",
+      "filename": "4-3-2.【情緒壓抑】我怕衝突，所以什麼都忍，但回家自己又會爆炸.mp4",
+      "youtube_id": "jWSffmh2cDk"
+    },
+    {
+      "id": "4-4-1",
+      "title": "【討好恐懼】我怕讓人失望，所以一直演「懂事的人」",
+      "filename": "4-4-1.【討好恐懼】我怕讓人失望，所以一直演「懂事的人」.mp4",
+      "youtube_id": "ltT1R6tHL7U"
+    },
+    {
+      "id": "4-4-2",
+      "title": "【討好恐懼】解除懂事面具",
+      "filename": "4-4-2.【討好恐懼】解除懂事面具.mp4",
+      "youtube_id": "EqNXub-v24I"
+    },
+    {
+      "id": "4-5-1",
+      "title": "【比較與嫉妒】他們越閃耀，我就越覺得自己暗淡",
+      "filename": "4-5-1.【比較與嫉妒】他們越閃耀，我就越覺得自己暗淡.mp4",
+      "youtube_id": "JZymzOSliXM"
+    },
+    {
+      "id": "4-5-2",
+      "title": "【比較與嫉妒】解除比較與嫉妒的三層練習",
+      "filename": "4-5-2.【比較與嫉妒】解除比較與嫉妒的三層練習.mp4",
+      "youtube_id": "76gEwEpROEk"
+    },
+    {
+      "id": "4-6-1",
+      "title": "【存在迷惘】我好像做了很多事，卻不知道自己是誰",
+      "filename": "4-6-1.【存在迷惘】我好像做了很多事，卻不知道自己是誰.mp4",
+      "youtube_id": "lJlfjmnAPio"
+    },
+    {
+      "id": "4-6-2",
+      "title": "【存在迷惘】解除生涯迷惘的三層練習",
+      "filename": "4-6-2.【存在迷惘】解除生涯迷惘的三層練習.mp4",
+      "youtube_id": "SRBj2cjgce0"
+    },
+    {
+      "id": "4-6-3",
+      "title": "【存在迷惘】延伸挑戰：完整版生涯探索實驗",
+      "filename": "4-6-3.【存在迷惘】延伸挑戰：完整版生涯探索實驗.mp4",
+      "youtube_id": "xpu4wM4sWes"
+    },
+    {
+      "id": "4-7-1",
+      "title": "【中年危機】為什麼明明人生「應該穩定了」，你卻開始懷疑一切",
+      "filename": "4-7-1.【中年危機】 為什麼明明人生「應該穩定了」，你卻開始懷疑一切.mp4",
+      "youtube_id": "AZ_mrl_G5Aw"
+    },
+    {
+      "id": "4-7-2",
+      "title": "【中年危機】解除中年危機的三層練習",
+      "filename": "4-7-2【中年危機】 解除中年危機的三層練習.mp4",
+      "youtube_id": "fc6-pcXiz-Q"
+    },
+    {
+      "id": "5-1",
+      "title": "關係裡的內耗：你扮演了什麼角色？",
+      "filename": "5—1 關係裡的喔：你扮演了什麼角色？.mp4",
+      "youtube_id": "m7_5U9_aGKE"
+    },
+    {
+      "id": "5-2-1",
+      "title": "重新建立自我價值：建立關係／情緒界線，不討好也不退縮",
+      "filename": "5—2—1 重新家裡自我價值：建立關係_情緒界線，不討好也不退縮.mp4",
+      "youtube_id": "220bP1JGWBA"
+    },
+    {
+      "id": "5-2-2",
+      "title": "練習：重新建立自我價值的三層練習",
+      "filename": "5—2—2 練習：重新建立自我價值的三層練習.mp4",
+      "youtube_id": "v0BBSHcQYlA"
+    },
+    {
+      "id": "5-3",
+      "title": "從防衛到連結：表達情緒與需求，讓真實的自己有機會被理解、被擁抱",
+      "filename": "5—3 從防衛到連結：表達情緒與需求，讓真實的自己有機會被理解、被擁抱.mp4",
+      "youtube_id": "VGP9LQjvvEA"
+    },
+    {
+      "id": "5-4-1",
+      "title": "放下有毒關係：你值得一段不用讓你懷疑自己的美好關係",
+      "filename": "5—4—1放下有毒關係：你值得一段不用讓你懷疑自己的美好關係.mp4",
+      "youtube_id": "GeEBwKJVCn0"
+    },
+    {
+      "id": "5-4-2",
+      "title": "練習：放下有毒關係的三層練習",
+      "filename": "5—4—2 練習：放下有毒關係的三層練習.mp4",
+      "youtube_id": "QGn5rGFRp5U"
+    },
+    {
+      "id": "5-5-1",
+      "title": "學會關係裡的鼓勵",
+      "filename": "5—5—1 學會關係裡的鼓勵.mp4",
+      "youtube_id": "nihqttODt-k"
+    },
+    {
+      "id": "5-5-2",
+      "title": "練習：建立鼓勵習慣的三層練習",
+      "filename": "5—5—2 練習：建立鼓勵習慣的三層練習.mp4",
+      "youtube_id": "3LguF_j0bVw"
+    },
+    {
+      "id": "6-1-1",
+      "title": "畫出屬於你的內耗反應地圖",
+      "filename": "6—1—1 畫出屬於你的內耗反應地圖.mp4",
+      "youtube_id": "NtwV-p09DMw"
+    },
+    {
+      "id": "6-1-2",
+      "title": "練習：改寫彈珠球反應",
+      "filename": "6—1—2 練習：改寫彈珠球反應.mp4",
+      "youtube_id": "ovfo_cdX8YM"
+    },
+    {
+      "id": "6-2-1",
+      "title": "鬆綁信念：從受害者、英雄劇本，到冒險者劇本",
+      "filename": "6—2—1 鬆綁信念：從受害者、英雄劇本，到冒險者劇本.mp4",
+      "youtube_id": "8BejKL9rerY"
+    },
+    {
+      "id": "6-2-2",
+      "title": "練習：改寫你的人生劇本",
+      "filename": "6—2—2 練習：該寫你的人生劇本.mp4",
+      "youtube_id": "fM0MG4sFrn8"
+    },
+    {
+      "id": "6-3",
+      "title": "長回我自己：你想成為什麼樣的人",
+      "filename": "6—3 長回我自己：你想成為什麼樣的人.mp4",
+      "youtube_id": "gye5YkqxWAA"
+    },
+    {
+      "id": "6-4",
+      "title": "生活中的內耗急救包",
+      "filename": "6—4 生活中的內耗急救包.mp4",
+      "youtube_id": "DwQnZYaIBic"
+    },
+    {
+      "id": "6-5",
+      "title": "打造你的人生低耗行動挑戰卡",
+      "filename": "6—5 打造你的人生低耗行動挑戰卡.mp4",
+      "youtube_id": "dxbQNOdp74s"
+    }
+  ],
+  "summaries": {}
+}

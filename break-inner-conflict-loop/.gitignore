@@ -1,0 +1,9 @@
+# Course MP4 inputs and intermediate outputs (large files)
+step0-input/
+step1-output/
+step2-output/
+step3-output/
+step4-output/
+
+# macOS
+.DS_Store
