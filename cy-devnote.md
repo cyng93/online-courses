@@ -88,11 +88,59 @@ step0-input/  step0-output/ step1-output/ step2-output/ step3-output/ step4-outp
   /Users/ching_yi_ng_groupDir/worktrees/github.com-cyng93/cyng93/brain-training/scientific-brain-training-method/src/tools \
   /Users/ching_yi_ng_groupDir/ghq/github.com/cyng93/online-courses/
 
-❯ ll -l --no-permissions --level=1 --icons --time modified (pwd)/../tools | head -n10
+❯ ll -l --no-permissions --level=1 --icons --time modified /Users/ching_yi_ng_groupDir/ghq/github.com/cyng93/online-courses/tools | head -n10
    - ching_yi_ng.2026 20 Feb 02:01 /Users/ching_yi_ng_groupDir/ghq/github.com/cyng93/online-courses/a-dummy-course-template/../tools
 3.8k ching_yi_ng.2026 20 Feb 02:01 ├── extract_all.sh
  30k ching_yi_ng.2026 20 Feb 02:01 ├── generate_pages.py
 1.4k ching_yi_ng.2026 20 Feb 02:01 ├── make_grids.sh
 3.1k ching_yi_ng.2026 20 Feb 02:01 └── parse_srt.py
+```
 
+- create softlink in each courses directory, first start with `a-dummy-course-template`
+```sh -
+❯ ll -l --no-permissions --level=3 --icons --time modified (pwd)
+   - ching_yi_ng.2026 20 Feb 02:06  /Users/ching_yi_ng_groupDir/ghq/github.com/cyng93/online-courses/a-dummy-course-template
+   - ching_yi_ng.2026 20 Feb 02:06 ├── 󰣞 src -> ../src
+   - ching_yi_ng.2026 20 Feb 02:01 │   └──  tools
+3.8k ching_yi_ng.2026 20 Feb 02:01 │       ├──  extract_all.sh
+ 30k ching_yi_ng.2026 20 Feb 02:01 │       ├──  generate_pages.py
+1.4k ching_yi_ng.2026 20 Feb 02:01 │       ├──  make_grids.sh
+3.1k ching_yi_ng.2026 20 Feb 02:01 │       └──  parse_srt.py
+   - ching_yi_ng.2026 20 Feb 01:20 ├──  step0-input
+   - ching_yi_ng.2026 20 Feb 01:20 ├──  step0-output
+   - ching_yi_ng.2026 20 Feb 01:22 ├──  step1-input -> step0-output
+   - ching_yi_ng.2026 20 Feb 01:20 ├──  step1-output
+   - ching_yi_ng.2026 20 Feb 01:22 ├──  step2-input -> step1-output
+   - ching_yi_ng.2026 20 Feb 01:21 ├──  step2-output
+   - ching_yi_ng.2026 20 Feb 01:22 ├──  step3-input -> step2-output
+   - ching_yi_ng.2026 20 Feb 01:21 ├──  step3-output
+   - ching_yi_ng.2026 20 Feb 01:22 ├──  step4-input -> step3-output
+   - ching_yi_ng.2026 20 Feb 01:21 └──  step4-output
+```
+
+- copy `a-dummy-course-template/*` to `break-inner-conflict-loop/`
+```sh
+❯ pwd
+/Users/ching_yi_ng_groupDir/ghq/github.com/cyng93/online-courses
+
+❯ cp -R ./a-dummy-course-template/* break-inner-conflict-loop/
+
+❯ ll -l --no-permissions --level=3 --icons --time modified (pwd)/break-inner-conflict-loop/
+   - ching_yi_ng.2026 20 Feb 02:13  /Users/ching_yi_ng_groupDir/ghq/github.com/cyng93/online-courses/break-inner-conflict-loop
+   - ching_yi_ng.2026 20 Feb 02:13 ├── 󰣞 src -> ../src
+   - ching_yi_ng.2026 20 Feb 02:01 │   └──  tools
+3.8k ching_yi_ng.2026 20 Feb 02:01 │       ├──  extract_all.sh
+ 30k ching_yi_ng.2026 20 Feb 02:01 │       ├──  generate_pages.py
+1.4k ching_yi_ng.2026 20 Feb 02:01 │       ├──  make_grids.sh
+3.1k ching_yi_ng.2026 20 Feb 02:01 │       └──  parse_srt.py
+   - ching_yi_ng.2026 20 Feb 02:13 ├──  step0-input
+   - ching_yi_ng.2026 20 Feb 02:13 ├──  step0-output
+   - ching_yi_ng.2026 20 Feb 02:13 ├──  step1-input -> step0-output
+   - ching_yi_ng.2026 20 Feb 02:13 ├──  step1-output
+   - ching_yi_ng.2026 20 Feb 02:13 ├──  step2-input -> step1-output
+   - ching_yi_ng.2026 20 Feb 02:13 ├──  step2-output
+   - ching_yi_ng.2026 20 Feb 02:13 ├──  step3-input -> step2-output
+   - ching_yi_ng.2026 20 Feb 02:13 ├──  step3-output
+   - ching_yi_ng.2026 20 Feb 02:13 ├──  step4-input -> step3-output
+   - ching_yi_ng.2026 20 Feb 02:13 └──  step4-output
 ```

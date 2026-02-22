@@ -102,7 +102,10 @@ building-a-second-brain/
     │   └── stepN-output
     ├── tools/
     │   ├── extract_all.sh             # STEP 1: ffmpeg frame extraction + grid composites
-    │   ├── make_grids.sh              # Helper: create 10-frame grid composites
+    │   ├── make_grids.sh              # Helper: create 10-frame plain grid composites
+    │   ├── make_annotated_grids.py    # STEP 2a: create grids + sidecar TSV
+    │   ├── validate_srt.py            # Optional QA: validate SRT timestamp issues
+    │   ├── fix_srt_end_times.py       # STEP 2c: set end_time = next block's start_time
     │   ├── parse_srt.py               # STEP 3: SRT → JSON
     │   └── generate_pages.py          # STEP 4: JSON → HTML
     ├── subtitle_frames_for_ocr/       # (gitignored) ~??K intermediate frame images
@@ -118,6 +121,7 @@ Prerequisites:
   - Course's MP4 video files or YouTube URL
   - brew install ffmpeg tesseract
   - brew install yt-dlp (optional, for downloading YouTube auto-generated subtitles)
+  - pip3 install Pillow (required by make_annotated_grids.py)
 
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ STEP 0 (optional, one-time, independent)                                    │
@@ -138,18 +142,74 @@ Prerequisites:
 │     Input:  step1-input/{chapter}-{name}*.mp4 (1+ course videos)            │
 │     Output: step1-output/subtitle_frames_for_ocr/                           │
 │             ├── {id}_{ssss}.jpg  (per-second frames)                        │
-│             └── {id}_grid_{nn}.jpg (10-frame composites)                    │
+│             └── {id}_grid_{nn}.jpg (10-frame composites, plain)             │
 │                                                                             │
-│   Calls: src/tools/make_grids.sh (for grid composites)                      │
+│   Calls: src/tools/make_grids.sh (for plain grid composites)                │
+│                                                                             │
+│   ⚠ Frame-to-timestamp mapping (critical):                                  │
+│     ffmpeg fps=1 outputs _0001.jpg at pts_time=0.                           │
+│     Frame _NNNN.jpg = second (NNNN - 1) of the MP4.                         │
+│     Plain grids do NOT show this mapping — use annotated grids instead.     │
 └─────────────────────────────────────────────────────────────────────────────┘
                             │
                             ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ STEP 2: OCR → SRT (manual, via Claude/Cydia)                                │
+│ STEP 2: OCR → SRT (via Claude/Cydia, 3 sub-steps)                          │
 │                                                                             │
-│   Feed grid images to Claude for OCR + deduplication                        │
-│     Input:  step2-input/subtitle_frames_for_ocr/{id}_grid_*.jpg             │
-│     Output: step2-output/subtitles/*_zh-TW_visual.srt                       │
+│   2a. Generate annotated grids + sidecar TSV:                               │
+│       python3 src/tools/make_annotated_grids.py \                           │
+│         step1-output/subtitle_frames_for_ocr {video_id} \                   │
+│         --output-dir <output_dir>                                           │
+│       → {id}_annotated_grid_{nn}.jpg (visual reference for OCR)            │
+│       → {id}_timestamps.tsv (frame→timestamp mapping, authoritative)       │
+│                                                                             │
+│   2b. OCR grid images using TSV timestamps → SRT:                          │
+│                                                                             │
+│       Overview: Read TSV for timestamps, read grid images for subtitle     │
+│       TEXT only. Never read timestamps from images — use TSV exclusively.  │
+│                                                                             │
+│       Procedure:                                                            │
+│       1. Read {id}_timestamps.tsv — this maps each grid row to its         │
+│          exact SRT timestamp. Columns: grid_file, row, frame, second,      │
+│          srt_timestamp. Example: "1-1_annotated_grid_01.jpg  1  _0001      │
+│          0  00:00:00"                                                       │
+│       2. Process grid images in order (grid_01, grid_02, ...):             │
+│          - Each grid has 10 rows (last grid may have fewer)                │
+│          - Each row = 1 second of video = 1 frame                          │
+│          - OCR the subtitle text from each row (Chinese zh-TW text         │
+│            typically at bottom of frame)                                    │
+│          - Map row N in grid_XX to TSV entry: grid_file=grid_XX, row=N    │
+│       3. Merge consecutive rows with IDENTICAL subtitle text:              │
+│          - start_time = srt_timestamp of FIRST row with this text          │
+│            (format: HH:MM:SS → HH:MM:SS,000)                              │
+│          - end_time = srt_timestamp of LAST row with this text             │
+│            (format: HH:MM:SS → HH:MM:SS,000)                              │
+│          - If only 1 row has this text, start=end (fix_srt_end_times.py    │
+│            will correct end times in step 2c)                              │
+│       4. Number SRT blocks sequentially starting from 1                    │
+│       5. Write output to step2-output/subtitles/{id}_{title}_zh-TW_       │
+│          visual.srt                                                         │
+│                                                                             │
+│       Batching: Process 5-10 grids at a time to stay within context.       │
+│       Accumulate SRT blocks across batches. Verify block continuity        │
+│       between batches (last text of prev batch ≠ first text of next).     │
+│                                                                             │
+│       Rows with NO visible subtitle text → skip (no SRT block).           │
+│       Rows where text is partially visible or unclear → best-effort OCR   │
+│       with surrounding context for inference.                               │
+│                                                                             │
+│   2c. Fix SRT end times (seamless subtitles):                               │
+│       python3 src/tools/fix_srt_end_times.py <srt_file>                     │
+│       - Sets each block's end_time = next block's start_time               │
+│       - Eliminates gaps between consecutive subtitle blocks                 │
+│                                                                             │
+│   2d. QA: Import SRT into YouTube (unlisted upload of same MP4)             │
+│       - Verify text accuracy against embedded video subtitles               │
+│       - Verify timing alignment (SRT subtitle should match speech)          │
+│                                                                             │
+│   Optional: validate_srt.py can be used to check for SRT issues:            │
+│       python3 src/tools/validate_srt.py <srt_file>       (report only)     │
+│       python3 src/tools/validate_srt.py <srt_file> --fix (auto-fix)        │
 └─────────────────────────────────────────────────────────────────────────────┘
                             │
                             ▼
