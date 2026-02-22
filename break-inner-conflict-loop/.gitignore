@@ -7,3 +7,7 @@ step4-output/
 
 # macOS
 .DS_Store
+
+# Local build symlinks
+step*-input
+step*-output
